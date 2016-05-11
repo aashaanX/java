@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class bank implements transaction{
+	public void balance(){
+		
+	}
+	public void transfer(){
+		
+	}
+	public void statement(){
+		
+	}
+	public void billPayment(){
+		
+	}
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int value = scan.nextInt();
+		bank b =new bank();
+		switch(value){
+			case 1:{
+				b.balance();
+				break;
+				}
+			case 2:{
+				b.transfer();
+				break;
+				}
+			case 3:{
+				b.statement();
+				break;
+			}
+			case 4:{
+				b.billPayment();
+				break;
+			}
+		}
+		scan.close();
+	}
+}

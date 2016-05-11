@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class bank implements transaction,settings{
+	public void balance(){
+		System.out.println("balance");
+	}
+	public void transfer(){
+		System.out.println("transfer");
+	}
+	public void statement(){
+		System.out.println("statment");
+	}
+	public void billPayment(){
+		System.out.println("bill_payment");
+	}
+	public void changepwd(){
+		System.out.println("change Password");
+	}
+	public void userDetails(){
+		System.out.println("User Details");
+	}
+	public static void main(String[] args) {
+		System.out.println("enter 1.balance 2.transfer 3.statement 4.billpaymeny 5.change password 6.user Details");
+		Scanner scan = new Scanner(System.in);
+		int value = scan.nextInt();
+		bank b =new bank();
+		switch(value){
+			case 1:{
+				b.balance();
+				break;
+				}
+			case 2:{
+				b.transfer();
+				break;
+				}
+			case 3:{
+				b.statement();
+				break;
+			}
+			case 4:{
+				b.billPayment();
+				break;
+			}
+			case 5:{
+				b.changepwd();
+				break;
+			}
+			case 6:{
+				b.userDetails();
+				break;
+			}
+		}
+		scan.close();
+	}
+}
