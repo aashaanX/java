@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class G {
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int balance = 200;
+		int withdraw;
+		System.out.print("print amount wanted to be withdrawn:");
+		withdraw = scan.nextInt();
+		try{
+			if (balance<withdraw){
+				throw new Exception("Not enough balance");
+			}else{
+				balance = balance-withdraw;
+			}
+		}catch(Exception e){
+			System.out.println(e);
+		}
+	scan.close();
+	}
+}
