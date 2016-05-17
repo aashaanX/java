@@ -14,7 +14,7 @@ public class A {
 	}
 
 }
-// Constructors are methode with same Class name.
+// Constructors are method with same Class name.
 // They are called when object is created
 // they will not return any value
 // though the will return control flow
