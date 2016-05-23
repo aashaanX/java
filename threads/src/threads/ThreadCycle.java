@@ -1,5 +1,6 @@
 package threads;
-
+// printing thread cycle
+// getState() method will return the current state of thread
 public class ThreadCycle extends Thread {
 	public void run(){
 		System.out.println("RUNNING");
